@@ -1,0 +1,91 @@
+body {
+    background-image: url("images/background.png");
+    background-repeat: n;
+    background-position: center;
+    height: 100vh
+}
+
+b {
+    font-weight: bold;
+}
+
+b, span {
+    font-family: 'Poppins';
+    padding: 5px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.content {
+    margin: auto;
+    padding: 200px;
+}
+
+.cep-titulo {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 27px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins';
+}
+
+.input-container {
+    text-align: center;
+    padding-left: 25px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.result-container {
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gps-img {
+    height: 10vh;
+    margin: 0 auto;
+    float: left;  
+}
+
+.inputCep {
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding-left: 10px;
+    margin-left: 50px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 15px;
+    background: none;
+}
+
+.inputCep:focus {
+    outline: none;
+}
+
+.btnCep {
+    color: white;
+    width: 80px;
+    height: 36px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-family: 'Poppins';
+    background: none;
+    font-weight: bold;
+}
+
+.btnCep:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    transition: 0.3s;
+}
+
