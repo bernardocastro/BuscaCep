@@ -3,17 +3,40 @@ function buscaCep(cep){
     fetch(urlCep)
     .then(response => response.json())
     .then( data => {
-      console.log('Response: ', data)
-  
-      document.querySelector('.bairro').textContent = data.bairro;
-      document.querySelector('.logradouro').textContent = data.logradouro;
-      document.querySelector('.localidade').textContent = data.localidade;
-      document.querySelector('.uf').textContent = data.uf;
+      desligarLoading();
+      popularDados(data);
     })
+    
 } 
-  
+  function popularDados(data){
+    document.querySelector('.bairro').textContent = data.bairro;
+    document.querySelector('.logradouro').textContent = data.logradouro;
+    document.querySelector('.localidade').textContent = data.localidade;
+    document.querySelector('.uf').textContent = data.uf;
+  }
   const btnCep = document.querySelector('.btnCep') 
   btnCep.addEventListener('click', function(){
-    const inputCep = document.querySelector('.inputCep').value
+    ligarLoading();
+    const inputCep = document.querySelector('.inputCep').value;
     buscaCep(inputCep);
+
+    if (inputCep.length != 8){
+      alert("CEP inválido!")
+      desligarLoading();
+    }
+    else if (response.ok == false ){
+      alert("CEP não encontrado!")
+    }
   })
+
+  function desligarLoading(){
+    const loader = document.querySelector('.loader').style.display = "none";
+    const content = document.querySelector('.content').style.display = "block";
+  }
+
+  function ligarLoading(){
+    const loader = document.querySelector('.loader').style.display = "inline-block";
+    const content = document.querySelector('.content').style.display = "none";
+  }
+
+ 

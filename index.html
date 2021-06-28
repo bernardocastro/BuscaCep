@@ -13,25 +13,29 @@
     </head>
     <body>
         <main>
-            <div class="content">
+            <div class="main">
                 <h1 class="cep-titulo">Busque o CEP:</h1>
                 <div class="input-container">
                     <input class="inputCep" type="input" value="" />
                     <button class="btnCep" type="button">Buscar</button>
                 </div>
                 <div class="result-container">
-                    <img class="gps-img" src="images/gps.png">
-                    <b>Rua:</b>
-                    <span class="logradouro"></span><br>
-                    <b>Bairro:</b>
-                    <span class="bairro"></span><br>               
-                    <b>Localidade:</b>
-                    <span class="localidade"></span><br>
-                    <b></p>UF:</b>
-                    <span class="uf"></span>
+                    <div class="loader"></div>
+                    <div class="result-content">
+                        <div class="content">
+                        <img class="gps-img" src="images/gps.png">
+                            <b>Logradouro:</b>
+                            <span class="logradouro"></span><br>
+                            <b>Bairro:</b>
+                            <span class="bairro"></span><br>               
+                            <b>Localidade:</b>
+                            <span class="localidade"></span><br>
+                            <b></p>UF:</b>
+                            <span class="uf"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
         </main>
         <script src="index.js"></script>
     </body>
