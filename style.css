@@ -41,6 +41,7 @@ span {
 }
 
 .result-container {
+    position: relative;
     background-color: white;
     max-width: 430px;
     text-align: center;
@@ -61,9 +62,8 @@ span {
     margin: 0 auto;
     display: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
-
+    top: 53px;
+    left: 47%;
 }
 
 @keyframes spin {
@@ -148,8 +148,6 @@ span {
     }
 
     .loader {
-        top: 56%;
-        left: 45%;
         margin: 0 auto;
     }
 }
