@@ -148,7 +148,8 @@ span {
     }
 
     .loader {
-
+        top: 56%;
+        left: 45%;
         margin: 0 auto;
     }
 }
