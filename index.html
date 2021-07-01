@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
-        <title>Busca Cep</title>
-    </head>
-    <body>
-        <main>
-            <div class="main">
-                <h1 class="cep-titulo">Busque o CEP:</h1>
-                <div class="input-container">
-                    <input class="inputCep" type="input" value="" />
-                    <button class="btnCep" type="button">Buscar</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <title>Busca Cep</title>
+</head>
+
+<body>
+    <main>
+        <div class="main">
+            <h1 class="cep-titulo">Busque o CEP:</h1>
+            <div class="input-container">
+                <input class="inputCep" type="input" value="" />
+                <button class="btnCep" type="button">Buscar</button>
+            </div>
+            <div class="result-container">
+                <div class="loader"></div>
+                <div class="erro">
+                    <span>Cep não encontrado!</span>
                 </div>
-                <div class="result-container">
-                    <div class="loader"></div>
-                    <div class="result-content">
-                        <div class="content">
+                <div class="result-content">
+                    <div class="content">
                         <img class="gps-img" src="images/gps.png">
-                            <b>Logradouro:</b>
-                            <span class="logradouro"></span><br>
-                            <b>Bairro:</b>
-                            <span class="bairro"></span><br>               
-                            <b>Localidade:</b>
-                            <span class="localidade"></span><br>
-                            <b></p>UF:</b>
-                            <span class="uf"></span>
-                        </div>
+                        <b>Logradouro:</b>
+                        <span class="logradouro"></span><br>
+                        <b>Bairro:</b>
+                        <span class="bairro"></span><br>
+                        <b>Localidade:</b>
+                        <span class="localidade"></span><br>
+                        <b></p>UF:</b>
+                        <span class="uf"></span>
                     </div>
                 </div>
             </div>
-        </main>
-        <script src="index.js"></script>
-    </body>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
 </html>

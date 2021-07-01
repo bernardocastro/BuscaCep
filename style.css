@@ -13,7 +13,8 @@ b {
     font-weight: bold;
 }
 
-b, span {
+b,
+span {
     font-family: 'Poppins';
     padding-top: 20px;
     display: inline-block;
@@ -60,22 +61,35 @@ b, span {
     margin: 0 auto;
     display: none;
     position: absolute;
-    top: 45%;
-    left: 48%;
+    top: 50%;
+    left: 50%;
 
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.erro {
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: red;
+    font-weight: bold;
+}
 
 .gps-img {
     height: 10vh;
     margin: 0 auto;
-    float: left; 
+    float: left;
     padding-bottom: 27px;
-    padding-top: 33px;
+    padding-top: 29px;
     padding-right: 0px;
     padding-left: 21px;
     display: inline-block;
@@ -116,3 +130,26 @@ b, span {
     transition: 0.3s;
 }
 
+@media (max-width: 450px) {
+    .inputCep {
+        height: 33px;
+
+        margin: 0 auto;
+    }
+
+    .btnCep {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .result-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .loader {
+        top: 54%;
+        left: 48%;
+        margin: 0 auto;
+    }
+}
