@@ -1,6 +1,4 @@
 # BuscaCep
-
-## Purpose
 Project developed to apply and practice the use of **API's** using fetch.
 
 ## About
